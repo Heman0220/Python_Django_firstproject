@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href={% static 'style.css' %}>
+    <title>register</title>  
+</head>
+<body>
+    <div class="welcome">
+    Welcome to travello appllication
+    </div> 
+    <div class="container">
+        <h1>REGISTER</h1>
+        <form action="register" method="post">
+            {% csrf_token %}
+            <p>First Name</p>
+            <input type="text" name="first_name" placeholder="First Name"><br>
+            <p>Last Name</p>
+            <input type="text" name="second_name" placeholder="Second Name"><br>
+            <p>User Name</p>
+            <input type="text" name="user_name" placeholder="User Name"><br>
+            <p>Email</p>
+            <input type="mail" name="mail" placeholder="Mail"><br>
+            <p>Password</p>
+            <input type="password" name="password1" placeholder="password"><br>
+            <p>Confirm Password</p>
+            <input type="password" name="password2" placeholder="Confirm password"><br>
+            <button class="sub" type="submit">Register</button>
+         </form>
+    </div>   
+</body>
+    <div>
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+            {% endfor %}
+    </div>
+</html>

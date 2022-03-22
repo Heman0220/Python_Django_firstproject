@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body
+{
+    background: url('https://image.shutterstock.com/image-photo/old-brick-black-color-wall-260nw-1605128917.jpg') no-repeat;
+    background-color: rosybrown;
+    background-size: cover;
+}
+
+.container
+{
+    width: 350px;
+    top: 20%;
+    left: 40%;
+    position: absolute;
+    color: #fff;
+}
+.container h1 {
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+
+.welcome{
+    font-style: italic;
+}
+.container p {
+    font-size: 20px;
+    font-style: oblique;
+    color:antiquewhite
+}
+
+.container input{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+.container button{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 5px;
+    border: 0;
+}
